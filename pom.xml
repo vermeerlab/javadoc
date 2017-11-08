@@ -61,8 +61,12 @@
 
                     <groups>
                         <group>
-                            <title>Annotation Processor API</title>
+                            <title>Annotation Processor Core</title>
                             <packages>org.vermeerlab.apt*</packages>
+                        </group>
+                        <group>
+                            <title>Annotation Processer with JavaPoet</title>
+                            <packages>org.vermeerlab.apt.element:org.vermeerlab.apt.javapoet</packages>
                         </group>
                         <group>
                             <title>Annotation Processor Command</title>
