@@ -48,12 +48,9 @@
                     <aggregate>true</aggregate>
                     <notimestamp>true</notimestamp>
                     <destDir>docs</destDir>
-                    <javaApiLinks>
-                        <property>
-                            <name>api_1.8</name>
-                            <value>https://docs.oracle.com/javase/jp/8/docs/api/</value>
-                        </property>
-                    </javaApiLinks>
+                    <links>
+                        <link>https://docs.oracle.com/javase/jp/8/docs/api</link>
+                    </links>
                     <groups>
                         <group>
                             <title>Annotation Processor API</title>
