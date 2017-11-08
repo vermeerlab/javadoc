@@ -1,6 +1,16 @@
 # vermeerlab JavaDoc
 
-[公開API](https://github.com/vermeerlab/maven)のJavaDocです.
+[公開API](https://github.com/vermeerlab/maven)のJavaDocを生成するプロジェクトです.
+
+## Description
+
+[JavaDoc URL](https://vermeerlab.github.io/javadoc/)
+
+[JavaDoc Jar](https://github.com/vermeerlab/javadoc/tree/master/jar)
+
+## Usage
+
+`mvn clean:clean javadoc:aggregate-jar`
 
 ## Licence
 
