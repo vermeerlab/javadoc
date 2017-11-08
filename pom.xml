@@ -46,7 +46,18 @@
                     <charset>${project.build.sourceEncoding}</charset>
                     <docencoding>${project.build.sourceEncoding}</docencoding>
                     <aggregate>true</aggregate>
+                    <notimestamp>true</notimestamp>
                     <destDir>docs</destDir>
+                    <groups>
+                        <group>
+                            <title>Annotation Processor API</title>
+                            <packages>org.vermeerlab.apt*</packages>
+                        </group>
+                        <group>
+                            <title>Annotation Processor Command</title>
+                            <packages>org.vermeerlab.apt.command.*</packages>
+                        </group>
+                    </groups>
                 </configuration>
             </plugin>
         </plugins>
