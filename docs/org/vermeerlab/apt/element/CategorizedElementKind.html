@@ -396,12 +396,14 @@ for(CategorizedElementKind c: CategorizedElementKind.values())
 <dd><code>R</code> - 戻り値の型</dd>
 <dt><span class="paramLabel">パラメータ:</span></dt>
 <dd><code>processingEnv</code> - AnnotationProcessor
- 実行時に取得した<a href="https://docs.oracle.com/javase/jp/8/docs/api/javax/annotation/processing/ProcessingEnvironment.html?is-external=true" title="javax.annotation.processing内のクラスまたはインタフェース"><code>ProcessingEnvironment</code></a>（必須）</dd>
-<dd><code>element</code> - AnnotationProcessor で取得した要素（必須）</dd>
+ 実行時に取得した<a href="https://docs.oracle.com/javase/jp/8/docs/api/javax/annotation/processing/ProcessingEnvironment.html?is-external=true" title="javax.annotation.processing内のクラスまたはインタフェース"><code>ProcessingEnvironment</code></a></dd>
+<dd><code>element</code> - AnnotationProcessor で取得した要素</dd>
 <dd><code>anntation</code> - Elementが対象としたアノテーション.
  <code>null</code> を指定した場合は、分類済みElementの対象とするアノテーションが未設定（<code>null</code>）になります.</dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>分類Elementインスタンス.分類Elementの実装をしていない場合は、汎用的な<a href="../../../../org/vermeerlab/apt/element/BaseElement.html" title="org.vermeerlab.apt.element内のクラス"><code>BaseElement</code></a> を適用します.</dd>
+<dt><span class="throwsLabel">例外:</span></dt>
+<dd><code><a href="../../../../org/vermeerlab/apt/javapoet/JavaPoetException.html" title="org.vermeerlab.apt.javapoet内のクラス">JavaPoetException</a></code> - processingEnv または element （もしくは両方）が <code>null</code>の場合</dd>
 </dl>
 </li>
 </ul>
@@ -422,10 +424,12 @@ for(CategorizedElementKind c: CategorizedElementKind.values())
 <dt><span class="paramLabel">型パラメータ:</span></dt>
 <dd><code>R</code> - 戻り値の分類済みElementの集約の型</dd>
 <dt><span class="paramLabel">パラメータ:</span></dt>
-<dd><code>categorizedElements</code> - 分類済みElementのリスト.（必須）</dd>
+<dd><code>categorizedElements</code> - 分類済みElementのリスト.</dd>
 <dd><code>annotation</code> - リスト作成の根拠となったアノテーション</dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>同一分類で集約したElementリストの集約クラス</dd>
+<dt><span class="throwsLabel">例外:</span></dt>
+<dd><code><a href="../../../../org/vermeerlab/apt/javapoet/JavaPoetException.html" title="org.vermeerlab.apt.javapoet内のクラス">JavaPoetException</a></code> - categorizedElementsが <code>null</code>の場合</dd>
 </dl>
 </li>
 </ul>
@@ -445,11 +449,13 @@ for(CategorizedElementKind c: CategorizedElementKind.values())
 <dt><span class="paramLabel">型パラメータ:</span></dt>
 <dd><code>R</code> - 戻り値の分類済みElementの集約の型</dd>
 <dt><span class="paramLabel">パラメータ:</span></dt>
-<dd><code>categorizedElements</code> - 分類済みElementのリスト.（必須）</dd>
+<dd><code>categorizedElements</code> - 分類済みElementのリスト.</dd>
 <dd><code>annotation</code> - リスト作成の根拠となったアノテーション</dd>
 <dd><code>elementKind</code> - 抽出条件に指定した要素の型</dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>同一種別で集約したElementリストの集約クラス</dd>
+<dt><span class="throwsLabel">例外:</span></dt>
+<dd><code><a href="../../../../org/vermeerlab/apt/javapoet/JavaPoetException.html" title="org.vermeerlab.apt.javapoet内のクラス">JavaPoetException</a></code> - categorizedElementsが <code>null</code>の場合</dd>
 </dl>
 </li>
 </ul>

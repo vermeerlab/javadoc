@@ -263,13 +263,13 @@ extends <a href="https://docs.oracle.com/javase/jp/8/docs/api/java/lang/Object.h
 <div class="block">インスタンスを構築します.</div>
 <dl>
 <dt><span class="paramLabel">パラメータ:</span></dt>
-<dd><code>kind</code> - 検証結果区分（必須）</dd>
-<dd><code>message</code> - 検証結果メッセージ（必須）</dd>
+<dd><code>kind</code> - 検証結果区分</dd>
+<dd><code>message</code> - 検証結果メッセージ</dd>
 <dd><code>element</code> - 検証対象の結果を出力する要素.指定しない場合は <code>null</code> を設定してください.</dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>構築したインスタンス</dd>
 <dt><span class="throwsLabel">例外:</span></dt>
-<dd><code><a href="../../../org/vermeerlab/apt/AnnotationProcessorException.html" title="org.vermeerlab.apt内のクラス">AnnotationProcessorException</a></code> - 必須項目が未設定の場合</dd>
+<dd><code><a href="../../../org/vermeerlab/apt/AnnotationProcessorException.html" title="org.vermeerlab.apt内のクラス">AnnotationProcessorException</a></code> - kind または messageが<code>null</code>の場合</dd>
 </dl>
 </li>
 </ul>
@@ -286,12 +286,12 @@ extends <a href="https://docs.oracle.com/javase/jp/8/docs/api/java/lang/Object.h
  基本的に検証結果については不正検証を行うことを想定し、デフォルトを<a href="https://docs.oracle.com/javase/jp/8/docs/api/javax/tools/Diagnostic.Kind.html?is-external=true#ERROR" title="javax.tools内のクラスまたはインタフェース"><code>Diagnostic.Kind.ERROR</code></a>としています.</div>
 <dl>
 <dt><span class="paramLabel">パラメータ:</span></dt>
-<dd><code>message</code> - 検証結果メッセージ（必須）</dd>
+<dd><code>message</code> - 検証結果メッセージ</dd>
 <dd><code>element</code> - 検証対象の結果を出力する要素.指定しない場合は, <code>null</code> を設定してください.</dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>構築したインスタンス.区分は<a href="https://docs.oracle.com/javase/jp/8/docs/api/javax/tools/Diagnostic.Kind.html?is-external=true#ERROR" title="javax.tools内のクラスまたはインタフェース"><code>Diagnostic.Kind.ERROR</code></a>です.</dd>
 <dt><span class="throwsLabel">例外:</span></dt>
-<dd><code><a href="../../../org/vermeerlab/apt/AnnotationProcessorException.html" title="org.vermeerlab.apt内のクラス">AnnotationProcessorException</a></code> - 必須項目が未設定の場合</dd>
+<dd><code><a href="../../../org/vermeerlab/apt/AnnotationProcessorException.html" title="org.vermeerlab.apt内のクラス">AnnotationProcessorException</a></code> - messageが<code>null</code>の場合</dd>
 </dl>
 </li>
 </ul>
@@ -307,11 +307,11 @@ extends <a href="https://docs.oracle.com/javase/jp/8/docs/api/java/lang/Object.h
  基本的に検証結果については不正検証を行うことを想定し、デフォルトを<a href="https://docs.oracle.com/javase/jp/8/docs/api/javax/tools/Diagnostic.Kind.html?is-external=true#ERROR" title="javax.tools内のクラスまたはインタフェース"><code>Diagnostic.Kind.ERROR</code></a>としています.</div>
 <dl>
 <dt><span class="paramLabel">パラメータ:</span></dt>
-<dd><code>message</code> - 検証結果メッセージ（必須）</dd>
+<dd><code>message</code> - 検証結果メッセージ</dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>構築したインスタンス.区分は<a href="https://docs.oracle.com/javase/jp/8/docs/api/javax/tools/Diagnostic.Kind.html?is-external=true#ERROR" title="javax.tools内のクラスまたはインタフェース"><code>Diagnostic.Kind.ERROR</code></a>です.</dd>
 <dt><span class="throwsLabel">例外:</span></dt>
-<dd><code><a href="../../../org/vermeerlab/apt/AnnotationProcessorException.html" title="org.vermeerlab.apt内のクラス">AnnotationProcessorException</a></code> - 必須項目が未設定の場合</dd>
+<dd><code><a href="../../../org/vermeerlab/apt/AnnotationProcessorException.html" title="org.vermeerlab.apt内のクラス">AnnotationProcessorException</a></code> - messageが<code>null</code>の場合</dd>
 </dl>
 </li>
 </ul>
