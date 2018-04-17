@@ -6,6 +6,9 @@ org.vermeerlab.apt.config
 org.vermeerlab.apt.element
 org.vermeerlab.apt.javapoet
 org.vermeerlab.base
+org.vermeerlab.beanvalidation
+org.vermeerlab.beanvalidation.form
+org.vermeerlab.beanvalidation.messageinterpolator
 org.vermeerlab.compiler
 org.vermeerlab.resourcebundle
 org.vermeerlab.scanner
