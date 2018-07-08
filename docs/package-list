@@ -1,3 +1,4 @@
+ddd.presentation
 org.vermeerlab.apt
 org.vermeerlab.apt.command
 org.vermeerlab.apt.command.propertyfileenum
@@ -7,8 +8,8 @@ org.vermeerlab.apt.element
 org.vermeerlab.apt.javapoet
 org.vermeerlab.base
 org.vermeerlab.beanvalidation
-org.vermeerlab.beanvalidation.form
 org.vermeerlab.beanvalidation.messageinterpolator
+org.vermeerlab.beanvalidation.validator
 org.vermeerlab.compiler
 org.vermeerlab.resourcebundle
 org.vermeerlab.scanner
